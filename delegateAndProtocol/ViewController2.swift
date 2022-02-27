@@ -7,12 +7,14 @@
 
 import UIKit
 
+//MARK: step 1
 protocol selectColorDelegate{
     func DidSelectColor(message: String , viewColor: UIColor )
 }
 
 class ViewController2: UIViewController {
 
+    //MARK: step 2
     var selectColorDelegate: selectColorDelegate!
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class ViewController2: UIViewController {
     
     @IBAction func blueCicked(_ sender: Any) {
         
+        //MARK: step 3
         selectColorDelegate.DidSelectColor(message: "you Selected Blue", viewColor: .blue)
         print("blue clicked")
         dismiss(animated: true, completion: nil)

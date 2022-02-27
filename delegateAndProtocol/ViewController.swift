@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     
 }
 extension ViewController : selectColorDelegate {
+    //MARK: step 4
     func DidSelectColor(message: String, viewColor: UIColor) {
         self.lblColor.text = message
         self.colorView.backgroundColor = viewColor
